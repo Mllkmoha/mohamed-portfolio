@@ -1,29 +1,11 @@
-const skillGroups = [
-  {
-    title: "Frontend",
-    description: "Building modern and responsive user interfaces.",
-    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
-  },
-  {
-    title: "Backend",
-    description: "Building APIs and server-side applications.",
-    skills: ["Node.js", "Express"],
-  },
-  {
-    title: "Database",
-    description: "Working with SQL, NoSQL and cloud databases.",
-    skills: ["PostgreSQL", "MongoDB", "Supabase"],
-  },
-  {
-    title: "Tools & Systems",
-    description: "Development workflow and system tools.",
-    skills: ["Git & GitHub", "Linux"],
-  },
-];
+import { skillGroups } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-t border-zinc-800/60 py-24 sm:py-32">
+    <section
+      id="skills"
+      className="border-t border-zinc-800/60 py-24 sm:py-32"
+    >
       <div className="mx-auto max-w-6xl px-6">
         {/* Section heading */}
         <div className="max-w-3xl">

@@ -1,33 +1,4 @@
-const experiences = [
-  {
-    role: "Full-Stack Web Developer",
-    company: "Personal Projects",
-    period: "May 2024 — Present",
-    description:
-      "Building full-stack web applications using React, Next.js, Node.js and TypeScript, with a focus on responsive interfaces, APIs, databases and clean code.",
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL",
-      "MongoDB",
-    ],
-  },
-  {
-    role: "IT Technician",
-    company: "Self-Employed",
-    period: "May 2024 — Present",
-    description:
-      "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues.",
-    technologies: [
-      "Hardware",
-      "Printers",
-      "Troubleshooting",
-      "Linux",
-    ],
-  },
-];
+import { experiences } from "@/data/experience";
 
 export default function Experience() {
   return (
@@ -68,9 +39,7 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <p className="text-sm text-zinc-500">
-                  {experience.period}
-                </p>
+                <p className="text-sm text-zinc-500">{experience.period}</p>
               </div>
 
               <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">

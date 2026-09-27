@@ -1,9 +1,6 @@
 export default function About() {
   return (
-    <section
-      id="about"
-      className="border-t border-zinc-800/60 py-24 sm:py-32"
-    >
+    <section id="about" className="border-t border-zinc-800/60 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-20">
           {/* Heading */}
@@ -25,15 +22,15 @@ export default function About() {
             </p>
 
             <p>
-              I work with React, Next.js, Node.js and TypeScript, along with
-              SQL and NoSQL databases. I enjoy turning ideas into functional
+              I work with React, Next.js, Node.js and TypeScript, along with SQL
+              and NoSQL databases. I enjoy turning ideas into functional
               products with clean interfaces and well-structured code.
             </p>
 
             <p>
-              Most of my experience comes from hands-on development and
-              personal projects, where I continuously improve my skills by
-              building, debugging and solving real development problems.
+              Most of my experience comes from hands-on development and personal
+              projects, where I continuously improve my skills by building,
+              debugging and solving real development problems.
             </p>
 
             <div className="grid gap-4 pt-4 sm:grid-cols-3">
@@ -54,7 +51,7 @@ export default function About() {
               <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5">
                 <p className="text-sm font-medium text-white">Database</p>
                 <p className="mt-2 text-sm text-zinc-500">
-                  PostgreSQL &amp; MongoDB
+                  PostgreSQL, MongoDB &amp; Supabase
                 </p>
               </div>
             </div>

@@ -1,3 +1,6 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Mail } from "lucide-react";
+
 export default function Contact() {
   return (
     <section
@@ -23,8 +26,9 @@ export default function Contact() {
         <div className="mt-10 flex flex-wrap gap-4">
           <a
             href="mailto:m63866157@gmail.com"
-            className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"
+            className="flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"
           >
+            <Mail size={16} />
             Email Me
           </a>
 
@@ -32,8 +36,9 @@ export default function Contact() {
             href="https://github.com/Mllkmoha"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
+            className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
           >
+            <FaGithub size={16} />
             GitHub
           </a>
 
@@ -41,8 +46,9 @@ export default function Contact() {
             href="https://www.linkedin.com/in/mohamed-mellouk-a9114233a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
+            className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
           >
+            <FaLinkedin size={16} />
             LinkedIn
           </a>
         </div>

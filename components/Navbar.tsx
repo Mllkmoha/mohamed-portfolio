@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -39,7 +40,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="relative text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+              className="group relative text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-200 hover:w-full" />
@@ -53,9 +54,9 @@ export default function Navbar() {
             href="https://github.com/Mllkmoha"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+            className="flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
           >
-            GitHub
+            GitHub <FaGithub size={16} />
           </a>
 
           <span className="h-3 w-px bg-zinc-800" />
@@ -64,9 +65,9 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/mohamed-mellouk-a9114233a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+            className="flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
           >
-            LinkedIn
+            LinkedIn <FaLinkedin size={16} />
           </a>
         </div>
 
@@ -118,8 +119,9 @@ export default function Navbar() {
                 href="https://github.com/Mllkmoha"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+                className="flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
               >
+                <FaGithub size={16} />
                 GitHub
               </a>
 
@@ -131,6 +133,7 @@ export default function Navbar() {
                 rel="noopener noreferrer"
                 className="text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
               >
+                <FaLinkedin size={16} />
                 LinkedIn
               </a>
             </div>
