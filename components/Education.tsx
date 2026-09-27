@@ -1,0 +1,69 @@
+const education = [
+  {
+    title: "Full-Stack Web Development",
+    institution: "Udemy",
+    period: "May 2024 — Aug 2026",
+    description:
+      "Training focused on modern frontend and backend web development, including React, Next.js, Node.js, TypeScript, databases and REST APIs.",
+  },
+  {
+    title: "Linux",
+    institution: "Udemy",
+    period: "Mar 2023 — Nov 2024",
+    description:
+      "Training covering Linux fundamentals, command-line tools, system administration and practical Linux usage.",
+  },
+];
+
+export default function Education() {
+  return (
+    <section
+      id="education"
+      className="border-t border-zinc-800/60 py-24 sm:py-32"
+    >
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
+            Education
+          </p>
+
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Learning &amp; Training
+          </h2>
+
+          <p className="mt-6 text-base leading-7 text-zinc-400 sm:text-lg">
+            Continuous learning through structured training and hands-on
+            development.
+          </p>
+        </div>
+
+        <div className="mt-12 space-y-6">
+          {education.map((item) => (
+            <article
+              key={`${item.title}-${item.institution}`}
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
+            >
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-1 text-sm text-zinc-500">
+                    {item.institution}
+                  </p>
+                </div>
+
+                <p className="text-sm text-zinc-500">{item.period}</p>
+              </div>
+
+              <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
+                {item.description}
+              </p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
