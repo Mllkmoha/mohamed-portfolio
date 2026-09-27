@@ -6,7 +6,6 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -32,6 +31,10 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Mohamed Rafik Mellouk, a Junior Full-Stack Web Developer.",
     type: "website",
+  },
+
+   icons: {
+    icon: "/mohamed1.png",
   },
 };
 
