@@ -106,23 +106,21 @@ export default function Navbar() {
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           aria-controls="mobile-menu"
-          className="flex min-h-11 min-w-11 items-center justify-center rounded-lg text-zinc-400 transition-colors duration-200 hover:bg-zinc-900 hover:text-white md:hidden"
+          className="relative flex h-11 w-11 items-center justify-center rounded-lg text-zinc-400 transition-colors duration-200 hover:bg-zinc-900 hover:text-white md:hidden"
         >
           <span
-            className={`block h-0.5 w-5 bg-current transition-transform duration-200 ${
-              isOpen ? "translate-y-2 rotate-45" : ""
+            className={`absolute h-0.5 w-5 bg-current transition-transform duration-200 ${
+              isOpen ? "rotate-45" : "-translate-y-2"
             }`}
           />
-
           <span
-            className={`mt-1.5 block h-0.5 w-5 bg-current transition-opacity duration-200 ${
-              isOpen ? "opacity-0" : ""
+            className={`absolute h-0.5 w-5 bg-current transition-opacity duration-200 ${
+              isOpen ? "opacity-0" : "opacity-100"
             }`}
           />
-
           <span
-            className={`mt-1.5 block h-0.5 w-5 bg-current transition-transform duration-200 ${
-              isOpen ? "-translate-y-2 -rotate-45" : ""
+            className={`absolute h-0.5 w-5 bg-current transition-transform duration-200 ${
+              isOpen ? "-rotate-45" : "translate-y-2"
             }`}
           />
         </button>

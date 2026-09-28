@@ -51,7 +51,11 @@ export default function Projects() {
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-zinc-500">
-                {project.description}
+                {project.title === "ShopZone"
+                  ? t.projects.descriptions.shopZone
+                  : project.title === "NextLevel Food"
+                    ? t.projects.descriptions.nextLevelFood
+                    : t.projects.descriptions.foodOrdering}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
