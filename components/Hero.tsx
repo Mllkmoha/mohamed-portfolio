@@ -2,8 +2,11 @@
 
 import { motion } from "motion/react";
 import Typewriter from "@/components/Typewriter";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pt-16">
       {/* Background */}
@@ -13,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-18.25  py-24">
+      <div className="relative mx-auto w-full max-w-6xl px-6 pt-18.25 py-24">
         <div className="max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -21,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500"
           >
-            Junior Full-Stack Web Developer
+            {t.hero.role}
           </motion.p>
 
           <motion.h1
@@ -40,7 +43,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-8 text-2xl font-medium text-white sm:text-3xl"
           >
-            Building{" "}
+            {t.hero.building}{" "}
             <span className="text-zinc-400">
               <Typewriter />
             </span>
@@ -52,9 +55,7 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg"
           >
-            I build responsive and scalable web applications using React,
-            Next.js, Node.js and TypeScript, with a focus on clean code,
-            practical solutions and great user experiences.
+            {t.hero.description}
           </motion.p>
 
           {/* CTA */}
@@ -68,7 +69,7 @@ export default function Hero() {
               href="#projects"
               className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"
             >
-              View Projects
+              {t.hero.viewProjects}
             </a>
 
             <a
@@ -76,7 +77,7 @@ export default function Hero() {
               download
               className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
             >
-              Download CV
+              {t.hero.downloadCv}
             </a>
           </motion.div>
 

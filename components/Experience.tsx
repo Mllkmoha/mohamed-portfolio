@@ -1,6 +1,11 @@
+"use client";
+
+import { useLanguage } from "@/components/LanguageProvider";
 import { experiences } from "@/data/experience";
 
 export default function Experience() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="experience"
@@ -9,16 +14,15 @@ export default function Experience() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
-            Experience
+            {t.experience.label}
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Experience &amp; Work
+            {t.experience.title}
           </h2>
 
           <p className="mt-6 text-base leading-7 text-zinc-400 sm:text-lg">
-            Practical experience gained through web development projects and
-            technical work.
+            {t.experience.description}
           </p>
         </div>
 
@@ -35,7 +39,9 @@ export default function Experience() {
                   </h3>
 
                   <p className="mt-1 text-sm text-zinc-500">
-                    {experience.company}
+                    {experience.role === "Full-Stack Web Developer"
+                      ? t.experience.personalProjects
+                      : t.experience.selfEmployed}
                   </p>
                 </div>
 
@@ -43,7 +49,9 @@ export default function Experience() {
               </div>
 
               <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                {experience.description}
+                {experience.role === "Full-Stack Web Developer"
+                  ? t.experience.fullStackDescription
+                  : t.experience.itDescription}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">

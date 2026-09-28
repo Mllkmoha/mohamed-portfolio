@@ -1,9 +1,10 @@
+import createNextIntlPlugin from "next-intl/plugin";
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-    output: "export",
+const withNextIntl = createNextIntlPlugin();
 
+const nextConfig: NextConfig = {
+  output: "export",
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

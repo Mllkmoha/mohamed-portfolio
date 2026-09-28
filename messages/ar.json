@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "about": "نبذة عني",
+    "skills": "المهارات",
+    "projects": "المشاريع",
+    "experience": "الخبرة",
+    "education": "التكوين",
+    "contact": "تواصل"
+  },
+  "hero": {
+    "role": "مطور ويب Full-Stack مبتدئ",
+    "building": "أبني",
+    "description": "أطور تطبيقات ويب حديثة ومتجاوبة وقابلة للتوسع باستخدام React وNext.js وNode.js وTypeScript، مع التركيز على جودة الكود والحلول العملية وتجربة المستخدم.",
+    "viewProjects": "مشاهدة المشاريع",
+    "downloadCv": "تحميل السيرة الذاتية",
+    "typewriter": [
+      "React وNext.js.",
+      "Node.js وTypeScript.",
+      "تطبيقات ويب Full-Stack."
+    ]
+  },
+  "about": {
+    "label": "نبذة عني",
+    "title": "أبني بفضول وأتعلم بهدف واضح.",
+    "paragraph1": "أنا مطور ويب Full-Stack مبتدئ، أركز على بناء تطبيقات ويب حديثة ومتجاوبة وعملية.",
+    "paragraph2": "أعمل باستخدام React وNext.js وNode.js وTypeScript، بالإضافة إلى قواعد بيانات SQL وNoSQL. أستمتع بتحويل الأفكار إلى منتجات عملية بواجهات نظيفة وكود منظم.",
+    "paragraph3": "معظم خبرتي اكتسبتها من خلال التطوير العملي والمشاريع الشخصية، حيث أواصل تحسين مهاراتي من خلال البناء وتصحيح الأخطاء وحل مشاكل تطوير حقيقية.",
+    "frontend": "الواجهة الأمامية",
+    "frontendDescription": "React وNext.js",
+    "backend": "الواجهة الخلفية",
+    "backendDescription": "Node.js وExpress",
+    "database": "قواعد البيانات",
+    "databaseDescription": "PostgreSQL وMongoDB وSupabase"
+  },
+  "skills": {
+    "label": "المهارات",
+    "title": "التقنيات التي أعمل بها.",
+    "description": "مجموعة تقنيات عملية تركز على بناء تطبيقات ويب حديثة وقابلة للصيانة والتوسع.",
+    "frontendDescription": "بناء واجهات مستخدم حديثة ومتجاوبة.",
+    "backendDescription": "بناء واجهات API وتطبيقات من جهة الخادم.",
+    "databaseDescription": "العمل مع قواعد بيانات SQL وNoSQL وقواعد البيانات السحابية.",
+    "toolsDescription": "أدوات التطوير وأنظمة التشغيل.",
+    "tools": "الأدوات والأنظمة",
+    "frontend": "الواجهة الأمامية",
+    "backend": "الواجهة الخلفية",
+    "database": "قواعد البيانات"
+  },
+  "projects": {
+    "label": "المشاريع",
+    "title": "ما قمت بتطويره.",
+    "description": "مجموعة من مشاريع Full-Stack وFrontend طورتها لحل مشاكل عملية وتعزيز مهاراتي في البرمجة.",
+    "featuredProject": "مشروع مميز",
+    "featured": "مميز",
+    "project": "مشروع",
+    "github": "GitHub",
+    "liveDemo": "التجربة المباشرة",
+    "descriptions": {
+      "shopZone": "تطبيق تجارة إلكترونية Full-Stack مع مصادقة JWT وإدارة المنتجات وواجهة Redux Toolkit متصلة بواجهة REST API.",
+      "nextLevelFood": "منصة حديثة لمشاركة وصفات الطعام، تتيح للمستخدمين اكتشاف وصفات المجتمع ومشاركة أطباقهم الخاصة باستخدام Next.js وSupabase.",
+      "foodOrdering": "تطبيق Full-Stack لطلب الطعام مع اكتشاف الوجبات وإدارة السلة وإتمام الطلب وإرسال الطلبات وحالات التحميل ومعالجة أخطاء API."
+    }
+  },
+  "github": {
+    "label": "GitHub",
+    "title": "أحدث الأعمال",
+    "description": "المشاريع التي تم تحديثها مؤخراً على GitHub الخاص بي.",
+    "viewGithub": "مشاهدة GitHub",
+    "loading": "جارٍ تحميل أحدث المشاريع...",
+    "empty": "لا توجد مستودعات عامة متاحة.",
+    "noDescription": "لا يوجد وصف متاح."
+  },
+  "experience": {
+    "label": "الخبرة",
+    "title": "الخبرة والعمل",
+    "description": "خبرة عملية اكتسبتها من خلال مشاريع تطوير الويب والعمل التقني.",
+    "personalProjects": "مشاريع شخصية",
+    "selfEmployed": "عمل حر",
+    "fullStackDescription": "تطوير تطبيقات ويب Full-Stack باستخدام React وNext.js وNode.js وTypeScript، مع التركيز على الواجهات المتجاوبة وواجهات API وقواعد البيانات وجودة الكود.",
+    "itDescription": "تقديم الدعم التقني وحل مشاكل أجهزة الكمبيوتر والطابعات والأجهزة الطرفية، بما في ذلك التثبيت والإعداد ومشاكل الاتصال.",
+    "roles": {
+      "fullStack": "مطور ويب Full-Stack",
+      "it": "تقني في الإعلام الآلي"
+    },
+    "companies": {
+      "personalProjects": "مشاريع شخصية",
+      "selfEmployed": "عمل حر"
+    },
+    "descriptions": {
+      "fullStack": "تطوير تطبيقات ويب Full-Stack باستخدام React وNext.js وNode.js وTypeScript، مع التركيز على الواجهات المتجاوبة وواجهات API وقواعد البيانات وجودة الكود.",
+      "it": "تقديم الدعم التقني وحل مشاكل أجهزة الكمبيوتر والطابعات والأجهزة الطرفية، بما في ذلك التثبيت والإعداد ومشاكل الاتصال."
+    }
+  },
+  "education": {
+    "label": "التكوين",
+    "title": "التعلم والتكوين",
+    "description": "تعلم مستمر من خلال التكوين المنظم والتطوير العملي.",
+    "fullStack": "تطوير الويب Full-Stack",
+    "fullStackDescription": "تكوين يركز على تطوير الويب الحديث في الواجهة الأمامية والخلفية، بما في ذلك React وNext.js وNode.js وTypeScript وقواعد البيانات وREST APIs.",
+    "linux": "Linux",
+    "linuxDescription": "تكوين يشمل أساسيات Linux وأدوات سطر الأوامر وإدارة الأنظمة والاستخدام العملي لنظام Linux."
+  },
+  "contact": {
+    "label": "تواصل",
+    "title": "لنبنِ شيئاً معاً.",
+    "description": "أنا منفتح على فرص العمل كمطور مبتدئ، والتدريب والتعاون في المشاريع.",
+    "emailMe": "راسلني عبر البريد",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "جميع الحقوق محفوظة."
+  }
+}

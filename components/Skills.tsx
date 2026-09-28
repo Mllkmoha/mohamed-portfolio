@@ -1,54 +1,65 @@
+"use client";
+
+import { useLanguage } from "@/components/LanguageProvider";
 import { skillGroups } from "@/data/skills";
 
 export default function Skills() {
+  const { t } = useLanguage();
+
+  const descriptions = {
+    Frontend: t.skills.frontendDescription,
+    Backend: t.skills.backendDescription,
+    Database: t.skills.databaseDescription,
+    "Tools & Systems": t.skills.toolsDescription,
+  };
+
   return (
     <section
       id="skills"
       className="border-t border-zinc-800/60 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-6">
-        {/* Section heading */}
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
-            Skills
+            {t.skills.label}
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Technologies I work with.
+            {t.skills.title}
           </h2>
 
           <p className="mt-6 text-base leading-7 text-zinc-400 sm:text-lg">
-            A practical technology stack focused on building modern,
-            maintainable and scalable web applications.
+            {t.skills.description}
           </p>
         </div>
 
-        {/* Skill groups */}
-        <div className="mt-12 grid gap-5 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {skillGroups.map((group) => (
-            <div
+            <article
               key={group.title}
-              className="group rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 transition-all duration-300 hover:border-zinc-600 hover:bg-zinc-900/60 sm:p-7"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
             >
-              <h3 className="text-lg font-semibold text-white">
-                {group.title}
+              <h3 className="text-xl font-semibold text-white">
+                {group.title === "Tools & Systems"
+                  ? t.skills.tools
+                  : group.title}
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-zinc-500">
-                {group.description}
+                {descriptions[group.title as keyof typeof descriptions]}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="rounded-lg border border-zinc-800 bg-zinc-950/80 px-3.5 py-2 text-sm text-zinc-300 transition-colors duration-200 group-hover:border-zinc-700 group-hover:text-white"
+                    className="rounded-md border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-xs text-zinc-400"
                   >
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

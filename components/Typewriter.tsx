@@ -1,14 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-const words = [
-  "React & Next.js.",
-  "Node.js & TypeScript.",
-  "Full-Stack Web Applications.",
-];
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Typewriter() {
+  const { t } = useLanguage();
+  const words = t.hero.typewriter;
+
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -25,7 +23,6 @@ export default function Typewriter() {
     const timer = setTimeout(() => {
       if (isDeleting) {
         const newText = currentWord.slice(0, text.length - 1);
-
         setText(newText);
 
         if (newText === "") {
@@ -34,7 +31,6 @@ export default function Typewriter() {
         }
       } else {
         const newText = currentWord.slice(0, text.length + 1);
-
         setText(newText);
 
         if (newText === currentWord) {
@@ -44,7 +40,7 @@ export default function Typewriter() {
     }, delay);
 
     return () => clearTimeout(timer);
-  }, [text, isDeleting, wordIndex]);
+  }, [text, isDeleting, wordIndex, words]);
 
   return <>{text}</>;
 }

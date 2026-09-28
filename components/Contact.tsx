@@ -1,7 +1,12 @@
+"use client";
+
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Contact() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="contact"
@@ -10,16 +15,15 @@ export default function Contact() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
-            Contact
+            {t.contact.label}
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Let&apos;s build something together.
+            {t.contact.title}
           </h2>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg">
-            I&apos;m open to junior developer opportunities, internships and
-            collaborations.
+            {t.contact.description}
           </p>
         </div>
 
@@ -29,7 +33,7 @@ export default function Contact() {
             className="flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"
           >
             <Mail size={16} />
-            Email Me
+            {t.contact.emailMe}
           </a>
 
           <a
@@ -39,7 +43,7 @@ export default function Contact() {
             className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
           >
             <FaGithub size={16} />
-            GitHub
+            {t.contact.github}
           </a>
 
           <a
@@ -49,7 +53,7 @@ export default function Contact() {
             className="flex items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
           >
             <FaLinkedin size={16} />
-            LinkedIn
+            {t.contact.linkedin}
           </a>
         </div>
       </div>

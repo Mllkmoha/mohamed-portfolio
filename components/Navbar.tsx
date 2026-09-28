@@ -3,18 +3,26 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const navigation = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
-  { name: "Contact", href: "#contact" },
-];
+  { key: "about", href: "#about" },
+  { key: "skills", href: "#skills" },
+  { key: "projects", href: "#projects" },
+  { key: "experience", href: "#experience" },
+  { key: "education", href: "#education" },
+  { key: "contact", href: "#contact" },
+] as const;
+
+const languages = [
+  { code: "en", label: "EN" },
+  { code: "fr", label: "FR" },
+  { code: "ar", label: "AR" },
+] as const;
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { locale, setLocale, t } = useLanguage();
 
   const closeMenu = () => {
     setIsOpen(false);
@@ -38,18 +46,38 @@ export default function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {navigation.map((item) => (
             <Link
-              key={item.name}
+              key={item.key}
               href={item.href}
               className="group relative text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
             >
-              {item.name}
-              <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-200 hover:w-full" />
+              {t.nav[item.key]}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-200 group-hover:w-full" />
             </Link>
           ))}
         </div>
 
-        {/* Desktop Social Links */}
-        <div className="hidden items-center gap-4 md:flex">
+        {/* Desktop Actions */}
+        <div className="hidden items-center gap-5 md:flex">
+          <div className="flex items-center gap-2">
+            {languages.map((language) => (
+              <button
+                key={language.code}
+                type="button"
+                onClick={() => setLocale(language.code)}
+                className={`text-xs font-medium transition-colors ${
+                  locale === language.code
+                    ? "text-white"
+                    : "text-zinc-500 hover:text-white"
+                }`}
+                aria-label={`Switch language to ${language.label}`}
+              >
+                {language.label}
+              </button>
+            ))}
+          </div>
+
+          <span className="h-3 w-px bg-zinc-800" />
+
           <a
             href="https://github.com/Mllkmoha"
             target="_blank"
@@ -77,7 +105,8 @@ export default function Navbar() {
           onClick={() => setIsOpen((open) => !open)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
-          className="rounded-lg p-2 text-zinc-400 transition-colors duration-200 hover:bg-zinc-900 hover:text-white md:hidden"
+          aria-controls="mobile-menu"
+          className="flex min-h-11 min-w-11 items-center justify-center rounded-lg text-zinc-400 transition-colors duration-200 hover:bg-zinc-900 hover:text-white md:hidden"
         >
           <span
             className={`block h-0.5 w-5 bg-current transition-transform duration-200 ${
@@ -101,20 +130,43 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="border-t border-white/10 bg-black/95 backdrop-blur-xl md:hidden">
+        <div
+          id="mobile-menu"
+          className="border-t border-white/10 bg-black/95 backdrop-blur-xl md:hidden"
+        >
           <div className="mx-auto flex max-w-6xl flex-col px-6 py-4">
             {navigation.map((item) => (
               <Link
-                key={item.name}
+                key={item.key}
                 href={item.href}
                 onClick={closeMenu}
                 className="border-b border-zinc-800/80 py-4 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
               >
-                {item.name}
+                {t.nav[item.key]}
               </Link>
             ))}
 
             <div className="flex items-center gap-5 pt-5">
+              {languages.map((language) => (
+                <button
+                  key={language.code}
+                  type="button"
+                  onClick={() => {
+                    setLocale(language.code);
+                    closeMenu();
+                  }}
+                  className={`text-xs font-medium transition-colors ${
+                    locale === language.code
+                      ? "text-white"
+                      : "text-zinc-500 hover:text-white"
+                  }`}
+                >
+                  {language.label}
+                </button>
+              ))}
+
+              <span className="h-3 w-px bg-zinc-800" />
+
               <a
                 href="https://github.com/Mllkmoha"
                 target="_blank"
@@ -125,13 +177,11 @@ export default function Navbar() {
                 GitHub
               </a>
 
-              <span className="h-3 w-px bg-zinc-800" />
-
               <a
                 href="https://www.linkedin.com/in/mohamed-mellouk-a9114233a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+                className="flex items-center gap-2 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
               >
                 <FaLinkedin size={16} />
                 LinkedIn

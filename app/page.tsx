@@ -7,6 +7,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import GitHubActivity from "@/components/GitHubActivity";
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <GitHubActivity />
       <Experience />
       <Education />
       <Contact />

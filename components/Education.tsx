@@ -1,6 +1,11 @@
+"use client";
+
+import { useLanguage } from "@/components/LanguageProvider";
 import { education } from "@/data/education";
 
 export default function Education() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="education"
@@ -9,44 +14,49 @@ export default function Education() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
-            Education
+            {t.education.label}
           </p>
 
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Learning &amp; Training
+            {t.education.title}
           </h2>
 
           <p className="mt-6 text-base leading-7 text-zinc-400 sm:text-lg">
-            Continuous learning through structured training and hands-on
-            development.
+            {t.education.description}
           </p>
         </div>
 
         <div className="mt-12 space-y-6">
-          {education.map((item) => (
-            <article
-              key={`${item.title}-${item.institution}`}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
-            >
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                    {item.title}
-                  </h3>
+          {education.map((item) => {
+            const isFullStack = item.title === "Full-Stack Web Development";
 
-                  <p className="mt-1 text-sm text-zinc-500">
-                    {item.institution}
-                  </p>
+            return (
+              <article
+                key={`${item.title}-${item.institution}`}
+                className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                      {isFullStack ? t.education.fullStack : t.education.linux}
+                    </h3>
+
+                    <p className="mt-1 text-sm text-zinc-500">
+                      {item.institution}
+                    </p>
+                  </div>
+
+                  <p className="text-sm text-zinc-500">{item.period}</p>
                 </div>
 
-                <p className="text-sm text-zinc-500">{item.period}</p>
-              </div>
-
-              <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                {item.description}
-              </p>
-            </article>
-          ))}
+                <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
+                  {isFullStack
+                    ? t.education.fullStackDescription
+                    : t.education.linuxDescription}
+                </p>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

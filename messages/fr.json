@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Développeur Web Full-Stack Junior",
+    "building": "Je construis",
+    "description": "Je développe des applications web modernes, responsives et évolutives avec React, Next.js, Node.js et TypeScript, avec une attention particulière portée au code propre, aux solutions pratiques et à l'expérience utilisateur.",
+    "viewProjects": "Voir mes projets",
+    "downloadCv": "Télécharger mon CV",
+    "typewriter": [
+      "React & Next.js.",
+      "Node.js & TypeScript.",
+      "Applications Web Full-Stack."
+    ]
+  },
+  "about": {
+    "label": "À propos de moi",
+    "title": "Je construis avec curiosité et j'apprends avec méthode.",
+    "paragraph1": "Je suis développeur Web Full-Stack Junior, spécialisé dans la création d'applications web modernes, responsives et pratiques.",
+    "paragraph2": "Je travaille avec React, Next.js, Node.js et TypeScript, ainsi qu'avec des bases de données SQL et NoSQL. J'aime transformer des idées en produits fonctionnels avec des interfaces claires et un code bien structuré.",
+    "paragraph3": "La majorité de mon expérience vient de projets pratiques et personnels, grâce auxquels j'améliore continuellement mes compétences en développant, déboguant et en résolvant de vrais problèmes techniques.",
+    "frontend": "Frontend",
+    "frontendDescription": "React & Next.js",
+    "backend": "Backend",
+    "backendDescription": "Node.js & Express",
+    "database": "Base de données",
+    "databaseDescription": "PostgreSQL, MongoDB & Supabase"
+  },
+  "skills": {
+    "label": "Compétences",
+    "title": "Technologies que j'utilise.",
+    "description": "Une stack technique pratique axée sur la création d'applications web modernes, maintenables et évolutives.",
+    "frontendDescription": "Création d'interfaces modernes et responsives.",
+    "backendDescription": "Création d'API et d'applications côté serveur.",
+    "databaseDescription": "Travail avec des bases SQL, NoSQL et cloud.",
+    "toolsDescription": "Outils de développement et systèmes.",
+    "tools": "Outils & Systèmes",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de données"
+  },
+  "projects": {
+    "label": "Projets",
+    "title": "Ce que j'ai développé.",
+    "description": "Une sélection de projets full-stack et frontend conçus pour résoudre des problèmes pratiques et renforcer mes compétences en développement.",
+    "featuredProject": "Projet mis en avant",
+    "featured": "À la une",
+    "project": "Projet",
+    "github": "GitHub",
+    "liveDemo": "Démo en ligne",
+    "descriptions": {
+      "shopZone": "Une application e-commerce full-stack avec authentification JWT, gestion des produits et frontend Redux Toolkit connecté à une API REST.",
+      "nextLevelFood": "Une plateforme moderne de partage de recettes permettant aux utilisateurs de découvrir des recettes et de partager leurs propres plats, développée avec Next.js et Supabase.",
+      "foodOrdering": "Une application full-stack de commande de repas avec découverte des plats, gestion du panier, paiement, envoi des commandes, états de chargement et gestion des erreurs API."
+    }
+  },
+  "github": {
+    "label": "GitHub",
+    "title": "Travaux récents",
+    "description": "Projets récemment mis à jour sur mon GitHub.",
+    "viewGithub": "Voir GitHub",
+    "loading": "Chargement des projets récents...",
+    "empty": "Aucun dépôt public disponible.",
+    "noDescription": "Aucune description disponible."
+  },
+  "experience": {
+    "label": "Expérience",
+    "title": "Expérience & Travail",
+    "description": "Expérience pratique acquise à travers des projets de développement web et des activités techniques.",
+    "personalProjects": "Projets personnels",
+    "selfEmployed": "Indépendant",
+    "fullStackDescription": "Développement d'applications web full-stack avec React, Next.js, Node.js et TypeScript, avec un focus sur les interfaces responsives, les API, les bases de données et la qualité du code.",
+    "itDescription": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité.",
+    "roles": {
+      "fullStack": "Développeur Web Full-Stack",
+      "it": "Technicien informatique"
+    },
+    "companies": {
+      "personalProjects": "Projets personnels",
+      "selfEmployed": "Indépendant"
+    },
+    "descriptions": {
+      "fullStack": "Développement d'applications web full-stack avec React, Next.js, Node.js et TypeScript, avec un focus sur les interfaces responsives, les API, les bases de données et la qualité du code.",
+      "it": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité."
+    }
+  },
+  "education": {
+    "label": "Formation",
+    "title": "Apprentissage & Formation",
+    "description": "Apprentissage continu à travers des formations structurées et le développement pratique.",
+    "fullStack": "Développement Web Full-Stack",
+    "fullStackDescription": "Formation axée sur le développement web frontend et backend moderne, notamment React, Next.js, Node.js, TypeScript, les bases de données et les API REST.",
+    "linux": "Linux",
+    "linuxDescription": "Formation couvrant les fondamentaux de Linux, les outils en ligne de commande, l'administration système et l'utilisation pratique de Linux."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Construisons quelque chose ensemble.",
+    "description": "Je suis ouvert aux opportunités de développeur junior, aux stages et aux collaborations.",
+    "emailMe": "M'envoyer un e-mail",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "rights": "Tous droits réservés."
+  }
+}
