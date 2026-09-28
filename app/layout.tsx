@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   description:
     "Mohamed Rafik Mellouk is a Junior Full-Stack Web Developer specializing in React, Next.js, Node.js and TypeScript. Explore his portfolio, projects and experience.",
 
+  verification: {
+    google: "VadszisPy7QlLRFKyx9BUPUgwMXYiVcHMvfv13z_P-0",
+  },
+
   keywords: [
     "Mohamed Rafik Mellouk",
     "Mohamed Mellouk",
