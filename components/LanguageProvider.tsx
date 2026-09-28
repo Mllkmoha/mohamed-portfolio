@@ -3,8 +3,7 @@
 import {
   createContext,
   useContext,
-  useEffect,
-  useState,
+  useSyncExternalStore,
   type ReactNode,
 } from "react";
 
@@ -44,11 +43,7 @@ function getBrowserLocale(): Locale {
   return "en";
 }
 
-function getInitialLocale(): Locale {
-  if (typeof window === "undefined") {
-    return "en";
-  }
-
+function getStoredLocale(): Locale {
   const savedLocale = localStorage.getItem("locale");
 
   if (savedLocale === "en" || savedLocale === "fr" || savedLocale === "ar") {
@@ -58,19 +53,43 @@ function getInitialLocale(): Locale {
   return getBrowserLocale();
 }
 
+function subscribe(callback: () => void) {
+  const handleStorageChange = () => {
+    callback();
+  };
+
+  window.addEventListener("storage", handleStorageChange);
+  window.addEventListener("locale-change", handleStorageChange);
+
+  return () => {
+    window.removeEventListener("storage", handleStorageChange);
+    window.removeEventListener("locale-change", handleStorageChange);
+  };
+}
+
+function getServerLocale(): Locale {
+  return "en";
+}
+
 export default function LanguageProvider({
   children,
 }: {
   children: ReactNode;
 }) {
-  const [locale, setLocale] = useState<Locale>(getInitialLocale);
+  const locale = useSyncExternalStore(
+    subscribe,
+    getStoredLocale,
+    getServerLocale,
+  );
 
-  useEffect(() => {
-    localStorage.setItem("locale", locale);
+  const setLocale = (nextLocale: Locale) => {
+    localStorage.setItem("locale", nextLocale);
 
-    document.documentElement.lang = locale;
-    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
-  }, [locale]);
+    document.documentElement.lang = nextLocale;
+    document.documentElement.dir = nextLocale === "ar" ? "rtl" : "ltr";
+
+    window.dispatchEvent(new Event("locale-change"));
+  };
 
   const value = {
     locale,
