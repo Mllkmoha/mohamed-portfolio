@@ -16,7 +16,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-18.25 py-24">
+      <div className="relative mx-auto w-full max-w-6xl px-6 pt-10.25 py-24">
         <div className="max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
