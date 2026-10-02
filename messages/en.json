@@ -13,6 +13,10 @@
     "description": "Modern web applications for startups, businesses and independent projects using React, Next.js, Node.js and TypeScript.",
     "viewProjects": "View My Work",
     "downloadCv": "Download CV",
+    "cvLanguages": {
+      "english": "English",
+      "french": "French"
+    },
     "contactMe": "Let's Work Together",
     "typewriter": [
       "Modern Web Applications.",
@@ -55,10 +59,19 @@
     "project": "Project",
     "github": "GitHub",
     "liveDemo": "Live Demo",
-    "descriptions": {
-      "shopZone": "A full-stack e-commerce application with JWT authentication, product management, and a Redux Toolkit frontend connected to a REST API.",
-      "nextLevelFood": "A modern food-sharing platform where users can discover community recipes and share their own meals, powered by Next.js and Supabase.",
-      "foodOrdering": "A full-stack food ordering application with meal discovery, cart management, checkout, order submission, loading states and API error handling."
+    "items": {
+      "shopZone": {
+        "title": "ShopZone",
+        "description": "A full-stack e-commerce application with JWT authentication, product management, and a Redux Toolkit frontend connected to a REST API."
+      },
+      "nextLevelFood": {
+        "title": "NextLevel Food",
+        "description": "A modern food-sharing platform where users can discover community recipes and share their own meals, powered by Next.js and Supabase."
+      },
+      "foodOrdering": {
+        "title": "Food Ordering App",
+        "description": "A full-stack food ordering application with meal discovery, cart management, checkout, order submission, loading states and API error handling."
+      }
     }
   },
   "github": {
@@ -74,36 +87,67 @@
     "label": "Experience",
     "title": "Experience & Work",
     "description": "Hands-on experience gained through independent web development projects and technical work.",
-    "personalProjects": "Personal Projects",
-    "selfEmployed": "Self-Employed",
-    "fullStackDescription": "Building full-stack web applications with React, Next.js, Node.js and TypeScript, including responsive interfaces, APIs and database integration.",
-    "itDescription": "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues.",
-    "roles": {
-      "fullStack": "Full-Stack Web Developer",
-      "it": "IT Technician"
-    },
-    "companies": {
-      "personalProjects": "Personal Projects",
-      "selfEmployed": "Self-Employed"
-    },
-    "descriptions": {
-      "fullStack": "Building full-stack web applications with React, Next.js, Node.js and TypeScript, including responsive interfaces, APIs and database integration.",
-      "it": "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues."
+    "items": {
+      "fullStack": {
+        "role": "Full-Stack Web Developer",
+        "company": "Personal Projects",
+        "period": "May 2024 — Present",
+        "description": "Building full-stack web applications using React, Next.js, Node.js and TypeScript, with a focus on responsive interfaces, APIs, databases and clean code.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      },
+      "it": {
+        "role": "IT Technician",
+        "company": "Self-Employed",
+        "period": "May 2024 — Present",
+        "description": "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues.",
+        "technologies": ["Hardware", "Printers", "Troubleshooting", "Linux"]
+      }
     }
   },
   "education": {
     "label": "Education",
     "title": "Learning & Training",
     "description": "Continuous learning through technical training and hands-on development.",
-    "fullStack": "Full-Stack Web Development",
-    "fullStackDescription": "Training focused on modern frontend and backend development, including React, Next.js, Node.js, TypeScript, databases and REST APIs.",
-    "linux": "Linux",
-    "linuxDescription": "Training covering Linux fundamentals, command-line tools, system administration and practical Linux usage."
+    "items": {
+      "fullStack": {
+        "title": "Full-Stack Web Development",
+        "institution": "Udemy",
+        "period": "May 2024 — Aug 2026",
+        "description": "Training focused on modern frontend and backend web development, including React, Next.js, Node.js, TypeScript, databases and REST APIs."
+      },
+      "linux": {
+        "title": "Linux",
+        "institution": "Udemy",
+        "period": "Mar 2023 — Nov 2024",
+        "description": "Training covering Linux fundamentals, command-line tools, system administration and practical Linux usage."
+      }
+    }
   },
   "contact": {
     "label": "Contact",
     "title": "Have a project in mind?",
     "description": "I'm available for freelance projects, collaborations and junior developer opportunities.",
+    "services": {
+      "businessWebsites": {
+        "title": "Business Websites",
+        "description": "Modern and responsive websites for businesses and startups."
+      },
+      "fullStackApplications": {
+        "title": "Full-Stack Applications",
+        "description": "Complete web applications with frontend, backend and databases."
+      },
+      "dashboardsApis": {
+        "title": "Dashboards & APIs",
+        "description": "Practical dashboards, APIs and database-driven systems."
+      }
+    },
     "emailMe": "Start a Conversation",
     "github": "GitHub",
     "linkedin": "LinkedIn"

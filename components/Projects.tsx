@@ -29,7 +29,7 @@ export default function Projects() {
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {projects.map((project) => (
             <article
-              key={project.title}
+              key={project.key}
               className={`flex flex-col rounded-2xl border bg-zinc-900/30 p-6 transition-colors hover:border-zinc-700 sm:p-8 ${
                 project.featured
                   ? "border-zinc-600 lg:col-span-2"
@@ -51,11 +51,11 @@ export default function Projects() {
               </div>
 
               <h3 className="mt-5 text-xl font-semibold text-white">
-                {project.title}
+                {t.projects.items[project.key].title}
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-zinc-500">
-                {project.description}
+                {t.projects.items[project.key].description}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">

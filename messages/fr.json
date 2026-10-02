@@ -13,6 +13,10 @@
     "description": "Des applications web modernes pour les startups, les entreprises et les projets indépendants avec React, Next.js, Node.js et TypeScript.",
     "viewProjects": "Voir mes réalisations",
     "downloadCv": "Télécharger mon CV",
+    "cvLanguages": {
+      "english": "Anglais",
+      "french": "Français"
+    },
     "contactMe": "Travaillons ensemble",
     "typewriter": [
       "Applications Web Modernes.",
@@ -55,10 +59,19 @@
     "project": "Projet",
     "github": "GitHub",
     "liveDemo": "Démo en ligne",
-    "descriptions": {
-      "shopZone": "Une application e-commerce Full-Stack avec authentification JWT, gestion des produits et frontend Redux Toolkit connecté à une API REST.",
-      "nextLevelFood": "Une plateforme moderne de partage de recettes développée avec Next.js et Supabase, permettant aux utilisateurs de découvrir et partager des recettes.",
-      "foodOrdering": "Une application Full-Stack de commande de repas avec découverte des plats, gestion du panier, commande et gestion des erreurs API."
+    "items": {
+      "shopZone": {
+        "title": "ShopZone",
+        "description": "Une application e-commerce Full-Stack avec authentification JWT, gestion des produits et frontend Redux Toolkit connecté à une API REST."
+      },
+      "nextLevelFood": {
+        "title": "NextLevel Food",
+        "description": "Une plateforme moderne de partage de recettes développée avec Next.js et Supabase, permettant aux utilisateurs de découvrir et partager des recettes."
+      },
+      "foodOrdering": {
+        "title": "Application de commande de repas",
+        "description": "Une application Full-Stack de commande de repas avec découverte des plats, gestion du panier, commande et gestion des erreurs API."
+      }
     }
   },
   "github": {
@@ -74,36 +87,72 @@
     "label": "Expérience",
     "title": "Expérience & Travail",
     "description": "Expérience pratique acquise à travers des projets indépendants de développement web et des activités techniques.",
-    "personalProjects": "Projets personnels",
-    "selfEmployed": "Indépendant",
-    "fullStackDescription": "Développement d'applications web Full-Stack avec React, Next.js, Node.js et TypeScript, notamment des interfaces responsives, des API et l'intégration de bases de données.",
-    "itDescription": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité.",
-    "roles": {
-      "fullStack": "Développeur Web Full-Stack",
-      "it": "Technicien informatique"
-    },
-    "companies": {
-      "personalProjects": "Projets personnels",
-      "selfEmployed": "Indépendant"
-    },
-    "descriptions": {
-      "fullStack": "Développement d'applications web Full-Stack avec React, Next.js, Node.js et TypeScript, notamment des interfaces responsives, des API et l'intégration de bases de données.",
-      "it": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité."
+    "items": {
+      "fullStack": {
+        "role": "Développeur Web Full-Stack",
+        "company": "Projets personnels",
+        "period": "Mai 2024 — Aujourd'hui",
+        "description": "Développement d'applications web Full-Stack avec React, Next.js, Node.js et TypeScript, notamment des interfaces responsives, des API et l'intégration de bases de données.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      },
+      "it": {
+        "role": "Technicien informatique",
+        "company": "Indépendant",
+        "period": "Mai 2024 — Aujourd'hui",
+        "description": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité.",
+        "technologies": [
+          "Matériel informatique",
+          "Imprimantes",
+          "Dépannage",
+          "Linux"
+        ]
+      }
     }
   },
   "education": {
     "label": "Formation",
     "title": "Apprentissage & Formation",
     "description": "Apprentissage continu à travers des formations techniques et le développement pratique.",
-    "fullStack": "Développement Web Full-Stack",
-    "fullStackDescription": "Formation axée sur le développement web frontend et backend moderne, notamment React, Next.js, Node.js, TypeScript, les bases de données et les API REST.",
-    "linux": "Linux",
-    "linuxDescription": "Formation couvrant les fondamentaux de Linux, les outils en ligne de commande, l'administration système et l'utilisation pratique de Linux."
+    "items": {
+      "fullStack": {
+        "title": "Développement Web Full-Stack",
+        "institution": "Udemy",
+        "period": "Mai 2024 — Août 2026",
+        "description": "Formation axée sur le développement web frontend et backend moderne, notamment React, Next.js, Node.js, TypeScript, les bases de données et les API REST."
+      },
+      "linux": {
+        "title": "Linux",
+        "institution": "Udemy",
+        "period": "Mars 2023 — Nov. 2024",
+        "description": "Formation couvrant les fondamentaux de Linux, les outils en ligne de commande, l'administration système et l'utilisation pratique de Linux."
+      }
+    }
   },
   "contact": {
     "label": "Contact",
     "title": "Vous avez un projet en tête ?",
     "description": "Je suis disponible pour des projets freelance, des collaborations et des opportunités en tant que développeur junior.",
+    "services": {
+      "businessWebsites": {
+        "title": "Sites web pour entreprises",
+        "description": "Des sites web modernes et responsives pour les entreprises et les startups."
+      },
+      "fullStackApplications": {
+        "title": "Applications Full-Stack",
+        "description": "Des applications web complètes avec frontend, backend et bases de données."
+      },
+      "dashboardsApis": {
+        "title": "Tableaux de bord et API",
+        "description": "Des tableaux de bord pratiques, des API et des systèmes basés sur des bases de données."
+      }
+    },
     "emailMe": "Démarrer une conversation",
     "github": "GitHub",
     "linkedin": "LinkedIn"

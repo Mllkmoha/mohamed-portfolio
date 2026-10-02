@@ -27,41 +27,43 @@ export default function Experience() {
         </div>
 
         <div className="mt-12 space-y-6">
-          {experiences.map((experience) => (
-            <article
-              key={experience.role}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
-            >
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-                <div>
-                  <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                    {experience.role}
-                  </h3>
+          {experiences.map((experience) => {
+            const item = t.experience.items[experience.key];
 
-                  <p className="mt-1 text-sm text-zinc-500">
-                    {experience.company}
-                  </p>
+            return (
+              <article
+                key={experience.key}
+                className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                      {item.role}
+                    </h3>
+
+                    <p className="mt-1 text-sm text-zinc-500">{item.company}</p>
+                  </div>
+
+                  <p className="text-sm text-zinc-500">{item.period}</p>
                 </div>
 
-                <p className="text-sm text-zinc-500">{experience.period}</p>
-              </div>
+                <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
+                  {item.description}
+                </p>
 
-              <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                {experience.description}
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                {experience.technologies.map((technology) => (
-                  <span
-                    key={technology}
-                    className="rounded-md border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-xs text-zinc-400"
-                  >
-                    {technology}
-                  </span>
-                ))}
-              </div>
-            </article>
-          ))}
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {item.technologies.map((technology) => (
+                    <span
+                      key={technology}
+                      className="rounded-md border border-zinc-800 bg-zinc-950 px-3 py-1.5 text-xs text-zinc-400"
+                    >
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -2,10 +2,7 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
-    title: "ShopZone",
-    label: "Featured",
-    description:
-      "A full-stack e-commerce application with JWT authentication, product management, and a Redux Toolkit frontend connected to a REST API.",
+    key: "shopZone",
     technologies: [
       "React 19",
       "Vite",
@@ -21,10 +18,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "NextLevel Food",
-    label: "Project",
-    description:
-      "A modern food-sharing platform where users can discover community recipes and share their own meals, powered by Next.js and Supabase.",
+    key: "nextLevelFood",
     technologies: [
       "Next.js 16",
       "React 19",
@@ -38,10 +32,7 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    title: "Food Ordering App",
-    label: "Project",
-    description:
-      "A full-stack food ordering application with meal discovery, cart management, checkout, order submission, loading states and API error handling.",
+    key: "foodOrdering",
     technologies: [
       "React 19",
       "Vite",

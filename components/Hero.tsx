@@ -136,7 +136,7 @@ export default function Hero() {
                       whileHover={{ x: 2 }}
                       className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
                     >
-                      🇺🇸 English
+                      🇺🇸 {t.hero.cvLanguages.english}
                     </motion.a>
 
                     <motion.a
@@ -147,7 +147,7 @@ export default function Hero() {
                       whileHover={{ x: 2 }}
                       className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
                     >
-                      🇫🇷 Français
+                      🇫🇷 {t.hero.cvLanguages.french}
                     </motion.a>
                   </motion.div>
                 )}

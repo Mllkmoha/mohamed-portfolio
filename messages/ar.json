@@ -13,6 +13,10 @@
     "description": "تطبيقات ويب حديثة للشركات الناشئة والمشاريع التجارية والمشاريع المستقلة، باستخدام React وNext.js وNode.js وTypeScript.",
     "viewProjects": "مشاهدة أعمالي",
     "downloadCv": "تحميل السيرة الذاتية",
+    "cvLanguages": {
+      "english": "الإنجليزية",
+      "french": "الفرنسية"
+    },
     "contactMe": "لنعمل معاً",
     "typewriter": [
       "تطبيقات ويب حديثة.",
@@ -55,10 +59,19 @@
     "project": "مشروع",
     "github": "GitHub",
     "liveDemo": "تجربة مباشرة",
-    "descriptions": {
-      "shopZone": "تطبيق تجارة إلكترونية Full-Stack مع مصادقة JWT وإدارة المنتجات وواجهة Redux Toolkit متصلة بـ REST API.",
-      "nextLevelFood": "منصة حديثة لمشاركة وصفات الطعام باستخدام Next.js وSupabase، تتيح للمستخدمين اكتشاف الوصفات ومشاركة وصفاتهم.",
-      "foodOrdering": "تطبيق Full-Stack لطلب الطعام مع اكتشاف الوجبات وإدارة السلة وإتمام الطلب ومعالجة أخطاء API."
+    "items": {
+      "shopZone": {
+        "title": "ShopZone",
+        "description": "تطبيق تجارة إلكترونية Full-Stack مع مصادقة JWT وإدارة المنتجات وواجهة Redux Toolkit متصلة بـ REST API."
+      },
+      "nextLevelFood": {
+        "title": "NextLevel Food",
+        "description": "منصة حديثة لمشاركة وصفات الطعام باستخدام Next.js وSupabase، تتيح للمستخدمين اكتشاف الوصفات ومشاركة وصفاتهم."
+      },
+      "foodOrdering": {
+        "title": "تطبيق طلب الطعام",
+        "description": "تطبيق Full-Stack لطلب الطعام مع اكتشاف الوجبات وإدارة السلة وإتمام الطلب ومعالجة أخطاء API."
+      }
     }
   },
   "github": {
@@ -74,36 +87,72 @@
     "label": "الخبرة",
     "title": "الخبرة والعمل",
     "description": "خبرة عملية اكتسبتها من خلال مشاريع تطوير الويب المستقلة والعمل التقني.",
-    "personalProjects": "مشاريع شخصية",
-    "selfEmployed": "عمل مستقل",
-    "fullStackDescription": "تطوير تطبيقات ويب Full-Stack باستخدام React وNext.js وNode.js وTypeScript، بما يشمل الواجهات المتجاوبة وواجهات API وربط قواعد البيانات.",
-    "itDescription": "تقديم الدعم التقني وحل مشاكل أجهزة الكمبيوتر والطابعات والأجهزة الطرفية، بما في ذلك التثبيت والإعداد ومشاكل الاتصال.",
-    "roles": {
-      "fullStack": "مطور ويب Full-Stack",
-      "it": "تقني في الإعلام الآلي"
-    },
-    "companies": {
-      "personalProjects": "مشاريع شخصية",
-      "selfEmployed": "عمل مستقل"
-    },
-    "descriptions": {
-      "fullStack": "تطوير تطبيقات ويب Full-Stack باستخدام React وNext.js وNode.js وTypeScript، بما يشمل الواجهات المتجاوبة وواجهات API وربط قواعد البيانات.",
-      "it": "تقديم الدعم التقني وحل مشاكل أجهزة الكمبيوتر والطابعات والأجهزة الطرفية، بما في ذلك التثبيت والإعداد ومشاكل الاتصال."
+    "items": {
+      "fullStack": {
+        "role": "مطور ويب Full-Stack",
+        "company": "مشاريع شخصية",
+        "period": "مايو 2024 — حتى الآن",
+        "description": "تطوير تطبيقات ويب Full-Stack باستخدام React وNext.js وNode.js وTypeScript، بما يشمل الواجهات المتجاوبة وواجهات API وربط قواعد البيانات.",
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      },
+      "it": {
+        "role": "تقني في الإعلام الآلي",
+        "company": "عمل مستقل",
+        "period": "مايو 2024 — حتى الآن",
+        "description": "تقديم الدعم التقني وحل مشاكل أجهزة الكمبيوتر والطابعات والأجهزة الطرفية، بما في ذلك التثبيت والإعداد ومشاكل الاتصال.",
+        "technologies": [
+          "الأجهزة",
+          "الطابعات",
+          "استكشاف الأعطال وإصلاحها",
+          "Linux"
+        ]
+      }
     }
   },
   "education": {
     "label": "التكوين",
     "title": "التعلم والتكوين",
     "description": "تعلم مستمر من خلال التكوين التقني والتطوير العملي.",
-    "fullStack": "تطوير الويب Full-Stack",
-    "fullStackDescription": "تكوين يركز على تطوير الويب الحديث في الواجهة الأمامية والخلفية، بما في ذلك React وNext.js وNode.js وTypeScript وقواعد البيانات وREST APIs.",
-    "linux": "Linux",
-    "linuxDescription": "تكوين يشمل أساسيات Linux وأدوات سطر الأوامر وإدارة الأنظمة والاستخدام العملي لنظام Linux."
+    "items": {
+      "fullStack": {
+        "title": "تطوير الويب Full-Stack",
+        "institution": "Udemy",
+        "period": "مايو 2024 — أغسطس 2026",
+        "description": "تكوين يركز على تطوير الويب الحديث في الواجهة الأمامية والخلفية، بما في ذلك React وNext.js وNode.js وTypeScript وقواعد البيانات وREST APIs."
+      },
+      "linux": {
+        "title": "Linux",
+        "institution": "Udemy",
+        "period": "مارس 2023 — نوفمبر 2024",
+        "description": "تكوين يشمل أساسيات Linux وأدوات سطر الأوامر وإدارة الأنظمة والاستخدام العملي لنظام Linux."
+      }
+    }
   },
   "contact": {
     "label": "تواصل",
     "title": "عندك مشروع في بالك؟",
     "description": "أنا متاح لمشاريع Freelance والتعاون وفرص العمل كمطور مبتدئ.",
+    "services": {
+      "businessWebsites": {
+        "title": "مواقع الأعمال",
+        "description": "مواقع حديثة ومتجاوبة للشركات والمشاريع الناشئة."
+      },
+      "fullStackApplications": {
+        "title": "تطبيقات Full-Stack",
+        "description": "تطبيقات ويب متكاملة تشمل الواجهة الأمامية والخلفية وقواعد البيانات."
+      },
+      "dashboardsApis": {
+        "title": "لوحات التحكم وواجهات API",
+        "description": "لوحات تحكم عملية وواجهات API وأنظمة تعتمد على قواعد البيانات."
+      }
+    },
     "emailMe": "ابدأ محادثة",
     "github": "GitHub",
     "linkedin": "LinkedIn"

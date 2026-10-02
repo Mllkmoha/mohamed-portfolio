@@ -27,14 +27,19 @@ export default function Education() {
         </div>
 
         <div className="mt-12 space-y-6">
-          {education.map((item) => {
+          {education.map(({ key }) => {
+            const item = t.education.items[key];
+
             return (
               <article
-                key={`${item.title}-${item.institution}`}
+                key={key}
                 className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                      {item.title}
+                    </h3>
                     <p className="mt-1 text-sm text-zinc-500">
                       {item.institution}
                     </p>

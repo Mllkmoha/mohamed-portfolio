@@ -3,6 +3,7 @@
 import {
   createContext,
   useContext,
+  useEffect,
   useSyncExternalStore,
   type ReactNode,
 } from "react";
@@ -82,12 +83,13 @@ export default function LanguageProvider({
     getServerLocale,
   );
 
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
+  }, [locale]);
+
   const setLocale = (nextLocale: Locale) => {
     localStorage.setItem("locale", nextLocale);
-
-    document.documentElement.lang = nextLocale;
-    document.documentElement.dir = nextLocale === "ar" ? "rtl" : "ltr";
-
     window.dispatchEvent(new Event("locale-change"));
   };
 

@@ -1,7 +1,5 @@
 export type Project = {
-  title: string;
-  label: string;
-  description: string;
+  key: "shopZone" | "nextLevelFood" | "foodOrdering";
   technologies: string[];
   github: string;
   liveDemo?: string;
@@ -15,16 +13,9 @@ export type SkillGroup = {
 };
 
 export type Experience = {
-  role: string;
-  company: string;
-  period: string;
-  description: string;
-  technologies: string[];
+  key: "fullStack" | "it";
 };
 
 export type Education = {
-  title: string;
-  institution: string;
-  period: string;
-  description: string;
+  key: "fullStack" | "linux";
 };

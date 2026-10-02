@@ -6,6 +6,11 @@ import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Contact() {
   const { t } = useLanguage();
+  const services = [
+    "businessWebsites",
+    "fullStackApplications",
+    "dashboardsApis",
+  ] as const;
 
   return (
     <section
@@ -28,32 +33,19 @@ export default function Contact() {
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
-            <h3 className="text-sm font-semibold text-white">
-              Business Websites
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-zinc-500">
-              Modern and responsive websites for businesses and startups.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
-            <h3 className="text-sm font-semibold text-white">
-              Full-Stack Applications
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-zinc-500">
-              Complete web applications with frontend, backend and databases.
-            </p>
-          </div>
-
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
-            <h3 className="text-sm font-semibold text-white">
-              Dashboards & APIs
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-zinc-500">
-              Practical dashboards, APIs and database-driven systems.
-            </p>
-          </div>
+          {services.map((key) => (
+            <article
+              key={key}
+              className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5"
+            >
+              <h3 className="text-sm font-semibold text-white">
+                {t.contact.services[key].title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-zinc-500">
+                {t.contact.services[key].description}
+              </p>
+            </article>
+          ))}
         </div>
 
         <div className="mt-8 flex flex-wrap gap-4">
