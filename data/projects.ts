@@ -3,7 +3,7 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   {
     title: "ShopZone",
-    label: "Featured Project",
+    label: "Featured",
     description:
       "A full-stack e-commerce application with JWT authentication, product management, and a Redux Toolkit frontend connected to a REST API.",
     technologies: [

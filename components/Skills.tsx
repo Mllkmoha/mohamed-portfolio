@@ -14,10 +14,7 @@ export default function Skills() {
   };
 
   return (
-    <section
-      id="skills"
-      className="border-t border-zinc-800/60 py-24 sm:py-32"
-    >
+    <section id="skills" className="border-t border-zinc-800/60 py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
@@ -40,9 +37,13 @@ export default function Skills() {
               className="rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 sm:p-8"
             >
               <h3 className="text-xl font-semibold text-white">
-                {group.title === "Tools & Systems"
-                  ? t.skills.tools
-                  : group.title}
+                {group.title === "Frontend"
+                  ? t.skills.frontend
+                  : group.title === "Backend"
+                    ? t.skills.backend
+                    : group.title === "Database"
+                      ? t.skills.database
+                      : t.skills.tools}
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-zinc-500">

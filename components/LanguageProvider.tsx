@@ -22,7 +22,7 @@ const messages = {
 type LanguageContextType = {
   locale: Locale;
   setLocale: (locale: Locale) => void;
-  t: typeof en;
+  t: (typeof messages)[Locale];
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
@@ -91,7 +91,7 @@ export default function LanguageProvider({
     window.dispatchEvent(new Event("locale-change"));
   };
 
-  const value = {
+  const value: LanguageContextType = {
     locale,
     setLocale,
     t: messages[locale],

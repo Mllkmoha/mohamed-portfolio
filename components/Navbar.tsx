@@ -48,7 +48,11 @@ export default function Navbar() {
             <Link
               key={item.key}
               href={item.href}
-              className="group relative text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+              className={`group relative text-sm transition-colors duration-200 hover:text-white ${
+                item.key === "contact"
+                  ? "rounded-lg border border-zinc-700 px-3 py-2 text-white hover:border-zinc-500"
+                  : "text-zinc-400"
+              }`}
             >
               {t.nav[item.key]}
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-white transition-all duration-200 group-hover:w-full" />
@@ -138,7 +142,11 @@ export default function Navbar() {
                 key={item.key}
                 href={item.href}
                 onClick={closeMenu}
-                className="border-b border-zinc-800/80 py-4 text-sm text-zinc-400 transition-colors duration-200 hover:text-white"
+                className={`border-b border-zinc-800/80 py-4 text-sm transition-colors duration-200 hover:text-white ${
+                  item.key === "contact"
+                    ? "font-medium text-white"
+                    : "text-zinc-400"
+                }`}
               >
                 {t.nav[item.key]}
               </Link>

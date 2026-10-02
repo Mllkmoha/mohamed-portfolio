@@ -8,23 +8,24 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "Développeur Web Full-Stack Junior",
+    "role": "Développeur Web Full-Stack Junior · Freelance",
     "building": "Je construis",
-    "description": "Je développe des applications web modernes, responsives et évolutives avec React, Next.js, Node.js et TypeScript, avec une attention particulière portée au code propre, aux solutions pratiques et à l'expérience utilisateur.",
-    "viewProjects": "Voir mes projets",
+    "description": "Des applications web modernes pour les startups, les entreprises et les projets indépendants avec React, Next.js, Node.js et TypeScript.",
+    "viewProjects": "Voir mes réalisations",
     "downloadCv": "Télécharger mon CV",
+    "contactMe": "Travaillons ensemble",
     "typewriter": [
-      "React & Next.js.",
-      "Node.js & TypeScript.",
-      "Applications Web Full-Stack."
+      "Applications Web Modernes.",
+      "Produits Full-Stack.",
+      "Expériences Web Responsives."
     ]
   },
   "about": {
     "label": "À propos de moi",
-    "title": "Je construis avec curiosité et j'apprends avec méthode.",
+    "title": "De l'idée au produit fonctionnel.",
     "paragraph1": "Je suis développeur Web Full-Stack Junior, spécialisé dans la création d'applications web modernes, responsives et pratiques.",
-    "paragraph2": "Je travaille avec React, Next.js, Node.js et TypeScript, ainsi qu'avec des bases de données SQL et NoSQL. J'aime transformer des idées en produits fonctionnels avec des interfaces claires et un code bien structuré.",
-    "paragraph3": "La majorité de mon expérience vient de projets pratiques et personnels, grâce auxquels j'améliore continuellement mes compétences en développant, déboguant et en résolvant de vrais problèmes techniques.",
+    "paragraph2": "Je travaille avec React, Next.js, Node.js et TypeScript, ainsi qu'avec PostgreSQL, MongoDB et Supabase. Je développe des interfaces responsives, des API et des applications basées sur des bases de données.",
+    "paragraph3": "Mon expérience vient principalement du développement pratique et de projets indépendants réalisés de l'idée à la mise en œuvre. Je suis disponible pour des projets freelance, des collaborations et des opportunités en tant que développeur junior.",
     "frontend": "Frontend",
     "frontendDescription": "React & Next.js",
     "backend": "Backend",
@@ -34,12 +35,12 @@
   },
   "skills": {
     "label": "Compétences",
-    "title": "Technologies que j'utilise.",
-    "description": "Une stack technique pratique axée sur la création d'applications web modernes, maintenables et évolutives.",
-    "frontendDescription": "Création d'interfaces modernes et responsives.",
-    "backendDescription": "Création d'API et d'applications côté serveur.",
-    "databaseDescription": "Travail avec des bases SQL, NoSQL et cloud.",
-    "toolsDescription": "Outils de développement et systèmes.",
+    "title": "Les technologies derrière mon travail.",
+    "description": "Une stack Full-Stack ciblée pour créer des interfaces responsives, des API et des applications web basées sur des bases de données.",
+    "frontendDescription": "React, Next.js, TypeScript et Tailwind CSS.",
+    "backendDescription": "Node.js, Express et API REST.",
+    "databaseDescription": "PostgreSQL, MongoDB et Supabase.",
+    "toolsDescription": "Git, GitHub, Linux et outils modernes de développement.",
     "tools": "Outils & Systèmes",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -47,23 +48,23 @@
   },
   "projects": {
     "label": "Projets",
-    "title": "Ce que j'ai développé.",
-    "description": "Une sélection de projets full-stack et frontend conçus pour résoudre des problèmes pratiques et renforcer mes compétences en développement.",
+    "title": "Les projets que j'ai réalisés.",
+    "description": "Des projets concrets qui montrent mon approche du développement frontend, backend, des API, des bases de données et des applications web complètes.",
     "featuredProject": "Projet mis en avant",
     "featured": "À la une",
     "project": "Projet",
     "github": "GitHub",
     "liveDemo": "Démo en ligne",
     "descriptions": {
-      "shopZone": "Une application e-commerce full-stack avec authentification JWT, gestion des produits et frontend Redux Toolkit connecté à une API REST.",
-      "nextLevelFood": "Une plateforme moderne de partage de recettes permettant aux utilisateurs de découvrir des recettes et de partager leurs propres plats, développée avec Next.js et Supabase.",
-      "foodOrdering": "Une application full-stack de commande de repas avec découverte des plats, gestion du panier, paiement, envoi des commandes, états de chargement et gestion des erreurs API."
+      "shopZone": "Une application e-commerce Full-Stack avec authentification JWT, gestion des produits et frontend Redux Toolkit connecté à une API REST.",
+      "nextLevelFood": "Une plateforme moderne de partage de recettes développée avec Next.js et Supabase, permettant aux utilisateurs de découvrir et partager des recettes.",
+      "foodOrdering": "Une application Full-Stack de commande de repas avec découverte des plats, gestion du panier, commande et gestion des erreurs API."
     }
   },
   "github": {
     "label": "GitHub",
-    "title": "Travaux récents",
-    "description": "Projets récemment mis à jour sur mon GitHub.",
+    "title": "Plus de projets",
+    "description": "Découvrez mon code, mes projets et mes travaux de développement en cours sur GitHub.",
     "viewGithub": "Voir GitHub",
     "loading": "Chargement des projets récents...",
     "empty": "Aucun dépôt public disponible.",
@@ -72,10 +73,10 @@
   "experience": {
     "label": "Expérience",
     "title": "Expérience & Travail",
-    "description": "Expérience pratique acquise à travers des projets de développement web et des activités techniques.",
+    "description": "Expérience pratique acquise à travers des projets indépendants de développement web et des activités techniques.",
     "personalProjects": "Projets personnels",
     "selfEmployed": "Indépendant",
-    "fullStackDescription": "Développement d'applications web full-stack avec React, Next.js, Node.js et TypeScript, avec un focus sur les interfaces responsives, les API, les bases de données et la qualité du code.",
+    "fullStackDescription": "Développement d'applications web Full-Stack avec React, Next.js, Node.js et TypeScript, notamment des interfaces responsives, des API et l'intégration de bases de données.",
     "itDescription": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité.",
     "roles": {
       "fullStack": "Développeur Web Full-Stack",
@@ -86,14 +87,14 @@
       "selfEmployed": "Indépendant"
     },
     "descriptions": {
-      "fullStack": "Développement d'applications web full-stack avec React, Next.js, Node.js et TypeScript, avec un focus sur les interfaces responsives, les API, les bases de données et la qualité du code.",
+      "fullStack": "Développement d'applications web Full-Stack avec React, Next.js, Node.js et TypeScript, notamment des interfaces responsives, des API et l'intégration de bases de données.",
       "it": "Support technique et dépannage pour ordinateurs, imprimantes et périphériques, notamment l'installation, la configuration et la résolution des problèmes de connectivité."
     }
   },
   "education": {
     "label": "Formation",
     "title": "Apprentissage & Formation",
-    "description": "Apprentissage continu à travers des formations structurées et le développement pratique.",
+    "description": "Apprentissage continu à travers des formations techniques et le développement pratique.",
     "fullStack": "Développement Web Full-Stack",
     "fullStackDescription": "Formation axée sur le développement web frontend et backend moderne, notamment React, Next.js, Node.js, TypeScript, les bases de données et les API REST.",
     "linux": "Linux",
@@ -101,9 +102,9 @@
   },
   "contact": {
     "label": "Contact",
-    "title": "Construisons quelque chose ensemble.",
-    "description": "Je suis ouvert aux opportunités de développeur junior, aux stages et aux collaborations.",
-    "emailMe": "M'envoyer un e-mail",
+    "title": "Vous avez un projet en tête ?",
+    "description": "Je suis disponible pour des projets freelance, des collaborations et des opportunités en tant que développeur junior.",
+    "emailMe": "Démarrer une conversation",
     "github": "GitHub",
     "linkedin": "LinkedIn"
   },

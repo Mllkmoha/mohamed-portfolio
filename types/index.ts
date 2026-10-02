@@ -4,7 +4,7 @@ export type Project = {
   description: string;
   technologies: string[];
   github: string;
-  liveDemo: string;
+  liveDemo?: string;
   featured: boolean;
 };
 

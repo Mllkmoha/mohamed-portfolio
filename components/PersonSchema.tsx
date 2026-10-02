@@ -6,7 +6,7 @@ export default function PersonSchema() {
       "@type": "Person",
       name: "Mohamed Rafik Mellouk",
       url: "https://mohamed-portfolio-b2d.pages.dev",
-      jobTitle: "Junior Full-Stack Web Developer",
+      jobTitle: "Junior Full-Stack Web Developer · Freelance",
       sameAs: [
         "https://github.com/Mllkmoha",
         "https://www.linkedin.com/in/mohamed-mellouk-a9114233a/",

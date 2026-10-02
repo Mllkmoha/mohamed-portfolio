@@ -8,23 +8,24 @@
     "contact": "Contact"
   },
   "hero": {
-    "role": "Junior Full-Stack Web Developer",
-    "building": "Building",
-    "description": "I build responsive and scalable web applications using React, Next.js, Node.js and TypeScript, with a focus on clean code, practical solutions and great user experiences.",
-    "viewProjects": "View Projects",
+    "role": "Junior Full-Stack Developer · Freelance",
+    "building": "I build",
+    "description": "Modern web applications for startups, businesses and independent projects using React, Next.js, Node.js and TypeScript.",
+    "viewProjects": "View My Work",
     "downloadCv": "Download CV",
+    "contactMe": "Let's Work Together",
     "typewriter": [
-      "React & Next.js.",
-      "Node.js & TypeScript.",
-      "Full-Stack Web Applications."
+      "Modern Web Applications.",
+      "Full-Stack Products.",
+      "Responsive Digital Experiences."
     ]
   },
   "about": {
     "label": "About Me",
-    "title": "Building with curiosity, learning with purpose.",
-    "paragraph1": "I'm a Junior Full-Stack Web Developer focused on building modern, responsive and practical web applications.",
-    "paragraph2": "I work with React, Next.js, Node.js and TypeScript, along with SQL and NoSQL databases. I enjoy turning ideas into functional products with clean interfaces and well-structured code.",
-    "paragraph3": "Most of my experience comes from hands-on development and personal projects, where I continuously improve my skills by building, debugging and solving real development problems.",
+    "title": "From idea to working product.",
+    "paragraph1": "I'm a Junior Full-Stack Developer focused on building modern, responsive and practical web applications.",
+    "paragraph2": "I work with React, Next.js, Node.js and TypeScript, along with PostgreSQL, MongoDB and Supabase. I build responsive interfaces, backend APIs and database-driven applications.",
+    "paragraph3": "My experience comes from hands-on development and independent projects built from idea to implementation. I'm available for freelance projects, collaborations and junior developer opportunities.",
     "frontend": "Frontend",
     "frontendDescription": "React & Next.js",
     "backend": "Backend",
@@ -34,12 +35,12 @@
   },
   "skills": {
     "label": "Skills",
-    "title": "Technologies I work with.",
-    "description": "A practical technology stack focused on building modern, maintainable and scalable web applications.",
-    "frontendDescription": "Building modern and responsive user interfaces.",
-    "backendDescription": "Building APIs and server-side applications.",
-    "databaseDescription": "Working with SQL, NoSQL and cloud databases.",
-    "toolsDescription": "Development workflow and system tools.",
+    "title": "The tools behind my work.",
+    "description": "A focused full-stack toolkit for building responsive interfaces, APIs and database-driven web applications.",
+    "frontendDescription": "React, Next.js, TypeScript and Tailwind CSS.",
+    "backendDescription": "Node.js, Express and REST APIs.",
+    "databaseDescription": "PostgreSQL, MongoDB and Supabase.",
+    "toolsDescription": "Git, GitHub, Linux and modern development tools.",
     "tools": "Tools & Systems",
     "frontend": "Frontend",
     "backend": "Backend",
@@ -47,8 +48,8 @@
   },
   "projects": {
     "label": "Projects",
-    "title": "Things I've built.",
-    "description": "A selection of full-stack and frontend projects built to solve practical problems and strengthen my development skills.",
+    "title": "Work I've built.",
+    "description": "Real projects that demonstrate how I approach interfaces, backend logic, APIs, databases and complete web applications.",
     "featuredProject": "Featured Project",
     "featured": "Featured",
     "project": "Project",
@@ -62,8 +63,8 @@
   },
   "github": {
     "label": "GitHub",
-    "title": "Latest work",
-    "description": "Recently updated projects from my GitHub.",
+    "title": "More of my work",
+    "description": "Explore my code, projects and ongoing development work on GitHub.",
     "viewGithub": "View GitHub",
     "loading": "Loading latest projects...",
     "empty": "No public repositories available.",
@@ -72,10 +73,10 @@
   "experience": {
     "label": "Experience",
     "title": "Experience & Work",
-    "description": "Practical experience gained through web development projects and technical work.",
+    "description": "Hands-on experience gained through independent web development projects and technical work.",
     "personalProjects": "Personal Projects",
     "selfEmployed": "Self-Employed",
-    "fullStackDescription": "Building full-stack web applications using React, Next.js, Node.js and TypeScript, with a focus on responsive interfaces, APIs, databases and clean code.",
+    "fullStackDescription": "Building full-stack web applications with React, Next.js, Node.js and TypeScript, including responsive interfaces, APIs and database integration.",
     "itDescription": "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues.",
     "roles": {
       "fullStack": "Full-Stack Web Developer",
@@ -86,24 +87,24 @@
       "selfEmployed": "Self-Employed"
     },
     "descriptions": {
-      "fullStack": "Building full-stack web applications using React, Next.js, Node.js and TypeScript, with a focus on responsive interfaces, APIs, databases and clean code.",
+      "fullStack": "Building full-stack web applications with React, Next.js, Node.js and TypeScript, including responsive interfaces, APIs and database integration.",
       "it": "Providing technical support and troubleshooting for computers, printers and peripheral devices, including installation, configuration and connectivity issues."
     }
   },
   "education": {
     "label": "Education",
     "title": "Learning & Training",
-    "description": "Continuous learning through structured training and hands-on development.",
+    "description": "Continuous learning through technical training and hands-on development.",
     "fullStack": "Full-Stack Web Development",
-    "fullStackDescription": "Training focused on modern frontend and backend web development, including React, Next.js, Node.js, TypeScript, databases and REST APIs.",
+    "fullStackDescription": "Training focused on modern frontend and backend development, including React, Next.js, Node.js, TypeScript, databases and REST APIs.",
     "linux": "Linux",
     "linuxDescription": "Training covering Linux fundamentals, command-line tools, system administration and practical Linux usage."
   },
   "contact": {
     "label": "Contact",
-    "title": "Let's build something together.",
-    "description": "I'm open to junior developer opportunities, internships and collaborations.",
-    "emailMe": "Email Me",
+    "title": "Have a project in mind?",
+    "description": "I'm available for freelance projects, collaborations and junior developer opportunities.",
+    "emailMe": "Start a Conversation",
     "github": "GitHub",
     "linkedin": "LinkedIn"
   },

@@ -1,11 +1,37 @@
 "use client";
 
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
+import { useEffect, useRef, useState } from "react";
 import Typewriter from "@/components/Typewriter";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Hero() {
   const { t } = useLanguage();
+
+  const [cvOpen, setCvOpen] = useState(false);
+  const cvRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (cvRef.current && !cvRef.current.contains(event.target as Node)) {
+        setCvOpen(false);
+      }
+    };
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setCvOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
+    };
+  }, []);
 
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pt-16">
@@ -73,12 +99,60 @@ export default function Hero() {
             </a>
 
             <a
-              href="/cv/CV-Mohamed.pdf"
-              download
+              href="#contact"
               className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
             >
-              {t.hero.downloadCv}
+              {t.hero.contactMe}
             </a>
+
+            <div ref={cvRef} className="relative">
+              <motion.button
+                type="button"
+                onClick={() => setCvOpen((open) => !open)}
+                aria-expanded={cvOpen}
+                aria-haspopup="menu"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.97 }}
+                className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
+              >
+                {t.hero.downloadCv}
+              </motion.button>
+
+              <AnimatePresence>
+                {cvOpen && (
+                  <motion.div
+                    role="menu"
+                    initial={{ opacity: 0, y: -8, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -8, scale: 0.96 }}
+                    transition={{ duration: 0.18, ease: "easeOut" }}
+                    className="absolute left-0 top-full z-50 mt-2 w-48 origin-top-left rounded-lg border border-zinc-700 bg-zinc-900 p-1 shadow-xl"
+                  >
+                    <motion.a
+                      href="/cv/CV_Mohamed_Rafik_Mellouk_EN.png"
+                      download="CV_Mohamed_Rafik_Mellouk_EN.png"
+                      role="menuitem"
+                      onClick={() => setCvOpen(false)}
+                      whileHover={{ x: 2 }}
+                      className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
+                    >
+                      🇺🇸 English
+                    </motion.a>
+
+                    <motion.a
+                      href="/cv/CV_Mohamed_Rafik_FR.png"
+                      download="CV_Mohamed_Rafik_Mellouk_FR.png"
+                      role="menuitem"
+                      onClick={() => setCvOpen(false)}
+                      whileHover={{ x: 2 }}
+                      className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
+                    >
+                      🇫🇷 Français
+                    </motion.a>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </motion.div>
 
           {/* Social Links */}

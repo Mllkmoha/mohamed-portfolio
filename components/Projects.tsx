@@ -26,11 +26,15 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
           {projects.map((project) => (
             <article
               key={project.title}
-              className="flex flex-col rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 transition-colors hover:border-zinc-700 sm:p-8"
+              className={`flex flex-col rounded-2xl border bg-zinc-900/30 p-6 transition-colors hover:border-zinc-700 sm:p-8 ${
+                project.featured
+                  ? "border-zinc-600 lg:col-span-2"
+                  : "border-zinc-800"
+              }`}
             >
               <div className="flex items-center justify-between gap-4">
                 <span className="text-xs font-medium uppercase tracking-[0.15em] text-zinc-500">
@@ -51,11 +55,7 @@ export default function Projects() {
               </h3>
 
               <p className="mt-3 text-sm leading-6 text-zinc-500">
-                {project.title === "ShopZone"
-                  ? t.projects.descriptions.shopZone
-                  : project.title === "NextLevel Food"
-                    ? t.projects.descriptions.nextLevelFood
-                    : t.projects.descriptions.foodOrdering}
+                {project.description}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">

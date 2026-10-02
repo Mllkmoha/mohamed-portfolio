@@ -27,7 +27,36 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+            <h3 className="text-sm font-semibold text-white">
+              Business Websites
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-500">
+              Modern and responsive websites for businesses and startups.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+            <h3 className="text-sm font-semibold text-white">
+              Full-Stack Applications
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-500">
+              Complete web applications with frontend, backend and databases.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-5">
+            <h3 className="text-sm font-semibold text-white">
+              Dashboards & APIs
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-zinc-500">
+              Practical dashboards, APIs and database-driven systems.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-4">
           <a
             href="mailto:m63866157@gmail.com"
             className="flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"

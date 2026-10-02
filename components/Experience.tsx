@@ -39,9 +39,7 @@ export default function Experience() {
                   </h3>
 
                   <p className="mt-1 text-sm text-zinc-500">
-                    {experience.role === "Full-Stack Web Developer"
-                      ? t.experience.personalProjects
-                      : t.experience.selfEmployed}
+                    {experience.company}
                   </p>
                 </div>
 
@@ -49,9 +47,7 @@ export default function Experience() {
               </div>
 
               <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                {experience.role === "Full-Stack Web Developer"
-                  ? t.experience.fullStackDescription
-                  : t.experience.itDescription}
+                {experience.description}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Mohamed Rafik Mellouk is a Junior Full-Stack Web Developer specializing in React, Next.js, Node.js and TypeScript. Explore his portfolio, projects and experience.",
+    "Mohamed Rafik Mellouk is a Junior Full-Stack Web Developer and Freelance Developer specializing in React, Next.js, Node.js and TypeScript. Explore his projects, skills and experience.",
 
   verification: {
     google: "VadszisPy7QlLRFKyx9BUPUgwMXYiVcHMvfv13z_P-0",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mohamed Rafik Mellouk | Junior Full-Stack Web Developer",
     description:
-      "Portfolio of Mohamed Rafik Mellouk, a Junior Full-Stack Web Developer specializing in React, Next.js, Node.js and TypeScript.",
+      "Portfolio of Mohamed Rafik Mellouk, a Junior Full-Stack Web Developer and Freelance Developer specializing in React, Next.js, Node.js and TypeScript.",
     url: "https://mohamed-portfolio-b2d.pages.dev",
     siteName: "Mohamed Rafik Mellouk",
     type: "website",

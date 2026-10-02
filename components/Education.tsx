@@ -28,8 +28,6 @@ export default function Education() {
 
         <div className="mt-12 space-y-6">
           {education.map((item) => {
-            const isFullStack = item.title === "Full-Stack Web Development";
-
             return (
               <article
                 key={`${item.title}-${item.institution}`}
@@ -37,10 +35,6 @@ export default function Education() {
               >
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
                   <div>
-                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
-                      {isFullStack ? t.education.fullStack : t.education.linux}
-                    </h3>
-
                     <p className="mt-1 text-sm text-zinc-500">
                       {item.institution}
                     </p>
@@ -50,9 +44,7 @@ export default function Education() {
                 </div>
 
                 <p className="mt-6 max-w-3xl text-sm leading-7 text-zinc-400 sm:text-base">
-                  {isFullStack
-                    ? t.education.fullStackDescription
-                    : t.education.linuxDescription}
+                  {item.description}
                 </p>
               </article>
             );
