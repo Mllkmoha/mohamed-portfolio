@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import Typewriter from "@/components/Typewriter";
+import TiltPhoto from "@/components/TiltPhoto";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function Hero() {
@@ -43,6 +44,7 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative mx-auto w-full max-w-6xl px-6 pt-10.25 py-24">
+        <div className="grid items-center gap-14 md:grid-cols-[1.1fr_.9fr]">
         <div className="max-w-4xl">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -180,6 +182,8 @@ export default function Hero() {
               LinkedIn
             </a>
           </motion.div>
+        </div>
+        <TiltPhoto />
         </div>
       </div>
     </section>
