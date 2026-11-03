@@ -121,15 +121,15 @@ export default function TiltPhoto({
   const compact = width < COMPACT_BELOW;
 
   return (
-    <div ref={wrapRef} {...handlers} className="relative w-full [perspective:1000px]">
-      <div className="relative mx-auto w-[72%] max-w-[380px]">
+    <div ref={wrapRef} {...handlers} className="relative w-full perspective-[1000px]">
+      <div className="relative mx-auto w-[72%] max-w-95">
         <div className="absolute -inset-5 rounded-[2.4rem] bg-[conic-gradient(from_180deg,rgba(99,102,241,.45),rgba(16,185,129,.35),rgba(99,102,241,.45))] opacity-70 blur-3xl" />
 
         <motion.div
           style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
-          className="relative aspect-[4/5] rounded-[2rem] shadow-2xl"
+          className="relative aspect-4/5 rounded-4xl shadow-2xl"
         >
-          <div className="absolute inset-0 overflow-hidden rounded-[2rem] border border-white/20">
+          <div className="absolute inset-0 overflow-hidden rounded-4xl border border-white/20">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={src}
@@ -150,7 +150,7 @@ export default function TiltPhoto({
           </div>
 
           {width > 0 && (
-            <div className="pointer-events-none absolute inset-0 [transform-style:preserve-3d]">
+            <div className="pointer-events-none absolute inset-0 transform-3d">
               {RINGS.map((ring) => {
                 const skills = ring.skills.slice(0, compact ? COMPACT_CHIPS : undefined);
                 return skills.map(([label, color], i) => (
