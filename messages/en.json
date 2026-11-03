@@ -64,6 +64,10 @@
         "title": "ShopZone",
         "description": "A full-stack e-commerce application with JWT authentication, product management, and a Redux Toolkit frontend connected to a REST API."
       },
+      "leadFlow": {
+        "title": "LeadFlow",
+        "description": "A full-stack CRM platform for managing contacts, tracking sales pipelines, and organizing customer activities. Built with Next.js, TypeScript, PostgreSQL and Prisma."
+      },
       "nextLevelFood": {
         "title": "NextLevel Food",
         "description": "A modern food-sharing platform where users can discover community recipes and share their own meals, powered by Next.js and Supabase."
