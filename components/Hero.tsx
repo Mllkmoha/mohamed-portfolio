@@ -35,7 +35,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen items-center overflow-hidden pt-16">
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden pt-16">
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-1/2 top-1/4 h-72 w-72 -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
@@ -43,147 +43,147 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative mx-auto w-full max-w-6xl px-6 pt-10.25 py-24">
+      <div className="relative mx-auto w-full max-w-6xl px-5 py-16 sm:px-6 sm:py-24">
         <div className="grid items-center gap-14 md:grid-cols-[1.1fr_.9fr]">
-        <div className="max-w-4xl">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500"
-          >
-            {t.hero.role}
-          </motion.p>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl"
-          >
-            Mohamed Rafik
-            <span className="block text-zinc-400">Mellouk.</span>
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-8 text-2xl font-medium text-white sm:text-3xl"
-          >
-            {t.hero.building}{" "}
-            <span className="text-zinc-400">
-              <Typewriter />
-            </span>
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg"
-          >
-            {t.hero.description}
-          </motion.p>
-
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-10 flex flex-wrap gap-4"
-          >
-            <a
-              href="#projects"
-              className="rounded-lg bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-105"
+          <div className="max-w-4xl">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="mb-5 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500"
             >
-              {t.hero.viewProjects}
-            </a>
+              {t.hero.role}
+            </motion.p>
 
-            <a
-              href="#contact"
-              className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
+            <motion.h1
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl"
             >
-              {t.hero.contactMe}
-            </a>
+              Mohamed Rafik
+              <span className="block text-zinc-400">Mellouk.</span>
+            </motion.h1>
 
-            <div ref={cvRef} className="relative">
-              <motion.button
-                type="button"
-                onClick={() => setCvOpen((open) => !open)}
-                aria-expanded={cvOpen}
-                aria-haspopup="menu"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="rounded-lg border border-zinc-700 bg-zinc-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="mt-8 text-2xl font-medium text-white sm:text-3xl"
+            >
+              {t.hero.building}{" "}
+              <span className="text-zinc-400">
+                <Typewriter />
+              </span>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="mt-6 max-w-2xl text-base leading-7 text-zinc-400 sm:text-lg"
+            >
+              {t.hero.description}
+            </motion.p>
+
+            {/* CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="mt-8 flex w-full max-w-sm flex-col gap-3 sm:mt-10 sm:max-w-none sm:flex-row sm:flex-wrap sm:gap-4"
+            >
+              <a
+                href="#projects"
+                className="flex min-h-12 w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-center text-sm font-bold text-black shadow-lg shadow-white/10 transition-all duration-200 hover:bg-zinc-200 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-auto"
               >
-                {t.hero.downloadCv}
-              </motion.button>
+                {t.hero.viewProjects}
+              </a>
 
-              <AnimatePresence>
-                {cvOpen && (
-                  <motion.div
-                    role="menu"
-                    initial={{ opacity: 0, y: -8, scale: 0.96 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                    transition={{ duration: 0.18, ease: "easeOut" }}
-                    className="absolute left-0 top-full z-50 mt-2 w-48 origin-top-left rounded-lg border border-zinc-700 bg-zinc-900 p-1 shadow-xl"
-                  >
-                    <motion.a
-                      href="/cv/CV_Mohamed_Rafik_Mellouk_EN.png"
-                      download="CV_Mohamed_Rafik_Mellouk_EN.png"
-                      role="menuitem"
-                      onClick={() => setCvOpen(false)}
-                      whileHover={{ x: 2 }}
-                      className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
+              <a
+                href="#contact"
+                className="flex min-h-12 w-full items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:border-zinc-500 hover:bg-zinc-800 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-auto"
+              >
+                {t.hero.contactMe}
+              </a>
+
+              <div ref={cvRef} className="relative w-full sm:w-auto">
+                <motion.button
+                  type="button"
+                  onClick={() => setCvOpen((open) => !open)}
+                  aria-expanded={cvOpen}
+                  aria-haspopup="menu"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="flex min-h-12 w-full items-center justify-center rounded-xl border border-zinc-700 bg-zinc-900 px-5 py-3 text-center text-sm font-semibold text-white transition-all duration-200 hover:border-zinc-500 hover:bg-zinc-800 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-auto"
+                >
+                  {t.hero.downloadCv}
+                </motion.button>
+
+                <AnimatePresence>
+                  {cvOpen && (
+                    <motion.div
+                      role="menu"
+                      initial={{ opacity: 0, y: -8, scale: 0.96 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: -8, scale: 0.96 }}
+                      transition={{ duration: 0.18, ease: "easeOut" }}
+                      className="absolute left-0 top-full z-50 mt-2 w-full max-w-[calc(100vw-2.5rem)] origin-top-left rounded-xl border border-zinc-700 bg-zinc-900 p-1 shadow-xl sm:w-48"
                     >
-                      🇺🇸 {t.hero.cvLanguages.english}
-                    </motion.a>
+                      <motion.a
+                        href="/cv/CV_Mohamed_Rafik_Mellouk_EN.png"
+                        download="CV_Mohamed_Rafik_Mellouk_EN.png"
+                        role="menuitem"
+                        onClick={() => setCvOpen(false)}
+                        whileHover={{ x: 2 }}
+                        className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
+                      >
+                        🇺🇸 {t.hero.cvLanguages.english}
+                      </motion.a>
 
-                    <motion.a
-                      href="/cv/CV_Mohamed_Rafik_FR.png"
-                      download="CV_Mohamed_Rafik_Mellouk_FR.png"
-                      role="menuitem"
-                      onClick={() => setCvOpen(false)}
-                      whileHover={{ x: 2 }}
-                      className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
-                    >
-                      🇫🇷 {t.hero.cvLanguages.french}
-                    </motion.a>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          </motion.div>
+                      <motion.a
+                        href="/cv/CV_Mohamed_Rafik_FR.png"
+                        download="CV_Mohamed_Rafik_Mellouk_FR.png"
+                        role="menuitem"
+                        onClick={() => setCvOpen(false)}
+                        whileHover={{ x: 2 }}
+                        className="block rounded-md px-4 py-2.5 text-sm text-white transition-colors hover:bg-zinc-800"
+                      >
+                        🇫🇷 {t.hero.cvLanguages.french}
+                      </motion.a>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </motion.div>
 
-          {/* Social Links */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-10 flex items-center gap-6"
-          >
-            <a
-              href="https://github.com/Mllkmoha"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
+            {/* Social Links */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-10 flex items-center gap-6"
             >
-              GitHub
-            </a>
+              <a
+                href="https://github.com/Mllkmoha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-zinc-500 transition-colors hover:text-white"
+              >
+                GitHub
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/mohamed-mellouk-a9114233a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
-            >
-              LinkedIn
-            </a>
-          </motion.div>
-        </div>
-        <TiltPhoto />
+              <a
+                href="https://www.linkedin.com/in/mohamed-mellouk-a9114233a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-zinc-500 transition-colors hover:text-white"
+              >
+                LinkedIn
+              </a>
+            </motion.div>
+          </div>
+          <TiltPhoto />
         </div>
       </div>
     </section>
