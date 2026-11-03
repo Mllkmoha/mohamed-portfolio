@@ -2,6 +2,22 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    key: "leadFlow",
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "NextAuth",
+      "Tailwind CSS",
+      "TanStack Query",
+    ],
+    github: "https://github.com/Mllkmoha/LeadFlow",
+    liveDemo: "https://leadflow-coral-six.vercel.app/",
+    featured: true,
+  },
+  {
     key: "shopZone",
     technologies: [
       "React 19",
@@ -15,7 +31,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Mllkmoha/ShopZone",
     liveDemo: "https://shop-zone-woad.vercel.app/",
-    featured: true,
+    featured: false,
   },
   {
     key: "nextLevelFood",
