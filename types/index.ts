@@ -1,5 +1,5 @@
 export type Project = {
-  key: "shopZone" | "nextLevelFood" | "foodOrdering";
+  key: "shopZone" | "nextLevelFood" | "foodOrdering" | "leadFlow";
   technologies: string[];
   github: string;
   liveDemo?: string;
