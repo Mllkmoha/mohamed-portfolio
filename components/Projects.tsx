@@ -4,14 +4,22 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { projects } from "@/data/projects";
 import { projectImages } from "@/data/projectImages";
 
-function Preview({ src, alt, href }: { src: string; alt: string; href: string }) {
+function Preview({
+  src,
+  alt,
+  href,
+}: {
+  src: string;
+  alt: string;
+  href: string;
+}) {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={alt}
-      className="group/preview block overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950"
+      className="group/preview block w-full min-w-0 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950"
     >
       <div className="flex items-center gap-1.5 border-b border-zinc-800 px-3 py-2">
         <span className="size-2.5 rounded-full bg-zinc-700" />
@@ -41,7 +49,10 @@ export default function Projects() {
   const { t } = useLanguage();
 
   return (
-    <section id="projects" className="border-t border-zinc-800/60 py-24 sm:py-32">
+    <section
+      id="projects"
+      className="border-t border-zinc-800/60 py-24 sm:py-32"
+    >
       <div className="mx-auto max-w-6xl px-6">
         <div className="max-w-3xl">
           <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-zinc-500">
@@ -65,16 +76,22 @@ export default function Projects() {
                 key={project.key}
                 className={`flex flex-col gap-6 rounded-2xl border bg-zinc-900/30 p-5 transition-colors hover:border-zinc-700 sm:p-6 ${
                   project.featured
-                    ? "border-zinc-600 lg:col-span-2 lg:grid lg:grid-cols-2 lg:items-center lg:gap-10 lg:p-8"
+                    ? "border-zinc-600 lg:col-span-2 lg:grid lg:grid-cols-[1.3fr_1fr] lg:items-center lg:gap-10 lg:p-8"
                     : "border-zinc-800"
                 }`}
               >
-                <Preview src={projectImages[project.key]} alt={item.title} href={demo} />
+                <Preview
+                  src={projectImages[project.key]}
+                  alt={item.title}
+                  href={demo}
+                />
 
                 <div className="flex h-full flex-col">
                   <div className="flex items-center justify-between gap-4">
                     <span className="text-xs font-medium uppercase tracking-[0.15em] text-zinc-500">
-                      {project.featured ? t.projects.featuredProject : t.projects.project}
+                      {project.featured
+                        ? t.projects.featuredProject
+                        : t.projects.project}
                     </span>
                     {project.featured && (
                       <span className="rounded-full border border-zinc-700 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-zinc-400">
@@ -83,8 +100,12 @@ export default function Projects() {
                     )}
                   </div>
 
-                  <h3 className="mt-4 text-xl font-semibold text-white">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-zinc-400">{item.description}</p>
+                  <h3 className="mt-4 text-xl font-semibold text-white">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-400">
+                    {item.description}
+                  </p>
 
                   <div className="mt-5 flex flex-wrap gap-2">
                     {project.technologies.map((technology) => (
