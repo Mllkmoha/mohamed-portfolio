@@ -64,6 +64,10 @@
         "title": "ShopZone",
         "description": "تطبيق تجارة إلكترونية Full-Stack مع مصادقة JWT وإدارة المنتجات وواجهة Redux Toolkit متصلة بـ REST API."
       },
+      "leadFlow": {
+        "title": "LeadFlow",
+        "description": "منصة CRM متكاملة لإدارة جهات الاتصال، ومتابعة مراحل المبيعات، وتنظيم أنشطة العملاء والمتابعات. تم تطويرها باستخدام Next.js وTypeScript وPostgreSQL وPrisma."
+      },
       "nextLevelFood": {
         "title": "NextLevel Food",
         "description": "منصة حديثة لمشاركة وصفات الطعام باستخدام Next.js وSupabase، تتيح للمستخدمين اكتشاف الوصفات ومشاركة وصفاتهم."
